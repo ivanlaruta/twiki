@@ -66,6 +66,17 @@ return [
             'sslmode' => 'prefer',
         ],
 
+         'sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST', '192.168.10.7'),
+            'port' => env('DB_PORT', '1433'),
+            'database' => env('DB_DATABASE', 'stock'),
+            'username' => env('DB_USERNAME', 'stock'),
+            'password' => env('DB_PASSWORD', 'st0ck2017'),
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
+
     ],
 
     /*

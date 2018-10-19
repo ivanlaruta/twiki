@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'WikiController@inicio')->name('inicio');
+Route::get('modal_descarga', 'WikiController@modal_descarga')->name('modal_descarga');
+
+Route::get('/icons', function () {
+    return view('icons');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
